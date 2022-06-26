@@ -7,7 +7,7 @@ int main(){
      scanf("%d",&income);
      if (income < 250000){ printf("\n\tYou don't need to pay income tax");
 
-     }else if((income >= 250000)  && (income <= 500000))  {printf("\nThe income tax amount is  %f \n",income*.05);
+     }else if((income >= 250000)  && (income <= 500000))  {printf("\nThe income tax amount is %f \n",income*.05);
 
      }else if((income >= 500000)  && (income <= 1000000)) {printf("\nThe income tax amount is %f \n",income*.2);
 

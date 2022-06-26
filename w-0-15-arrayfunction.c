@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 int* getArray (int[],int );
-void displayArray (int, int);
+void displayArray(int[] ,int);
+
 
 
 
@@ -12,7 +13,8 @@ int main(){
      scanf("%d",&size);
      int array[50];
      int *p_array = getArray(array,size);
-     displayArray(*p_array, size);
+     displayArray(array, size);
+
      return 0;
 }
 
@@ -29,11 +31,11 @@ int* getArray (int array[], int ar_size){
 
 
 
-void displayArray(int array_p,int limit){
 
-     //int array[50];
+void displayArray(int array[],int limit){
+
      for (int i=0; i < limit; i++){
-          printf("%d\t",(array_p+i));
+          printf("%d\t",array[i]);
      }
-    
 }
+

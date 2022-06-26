@@ -14,7 +14,7 @@ public class PrimeJavaW016 {
           int fg =0;
           int variable = ui.nextInt();
           if ((variable !=0) && (variable !=1)){
-               for (int i = 2; variable/2 <=i;i++){
+               for (int i = 2; variable/2 >=i;i++){
                     if (variable % i == 0){
                          fg = 1;
                          System.out.println(variable+" : is not a Prime number");
