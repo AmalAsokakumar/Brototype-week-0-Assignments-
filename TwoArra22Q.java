@@ -1,18 +1,13 @@
-//this code is biased on  question 22
-
-
-
-
 import java.util.Scanner;
 
-public class TwoArray22 {
+public class TwoArra22Q {
 
 
      int[][] array = new int[20][20];
     
 
      void getArray(int rows, int columns){
-          try (Scanner input = new Scanner(System.in)) {
+          Scanner input = new Scanner(System.in);
                System.out.println("Enter the array elements : ");
                for(int i=0; i<rows; i++){
                     for (int j=0; j<columns; j++){
@@ -20,7 +15,7 @@ public class TwoArray22 {
                     }
                }
           }
-     }
+     
 
      void displayArray(String msg,int rows,int columns){
           System.out.println(msg);
@@ -31,7 +26,7 @@ public class TwoArray22 {
           }
      }
 
-     void sum(TwoArray22 obj1,TwoArray22 obj2,int rows,int columns){
+     void sum(TwoArra22Q obj1,TwoArra22Q obj2,int rows,int columns){
           for (int i=0; i<rows; i++){
                for (int j=0; j<columns; j++){
                    array[i][j] = obj1.array[i][j] + obj2.array[i][j];
@@ -41,16 +36,16 @@ public class TwoArray22 {
      }
      public static void main(String[] args){
           try (Scanner input = new Scanner(System.in)) {
-               String message1=new String("The First Array");
-               String message2=new String("The Second Array");
-               String message3=new String("The  Sum Of Two arrays Are : ");
+               String message1=new String("The First Array : \n");
+               String message2=new String("The Second Array : \n");
+               String message3=new String("The  Sum Of Two arrays Are : \n");
 
                System.out.println("Enter size of the Array");
                int rows=input.nextInt();
                int columns=input.nextInt();
-               TwoArray22 obj1=new TwoArray22();
-               TwoArray22 obj2=new TwoArray22();
-               TwoArray22 obj3=new TwoArray22();
+               TwoArra22Q obj1=new TwoArra22Q();
+               TwoArra22Q obj2=new TwoArra22Q();
+               TwoArra22Q obj3=new TwoArra22Q();
 
         
                obj1.getArray(rows,columns);

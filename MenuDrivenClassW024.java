@@ -8,7 +8,7 @@
 
 
           void displayResult(MenuDrivenClassW024 object) {
-               System.out.println("The area of "+object.string+ " is "+result);
+               System.out.println("The area of "+object.string+ " is "+result+" cm2");
           }
 
      public static void main(String[] args){
@@ -27,11 +27,11 @@
                     obj.string ="Square";
                     obj.result =obj.square(input.nextInt());
                }else if (choice == 3){
-                    System.out.print("Enter the sides of a rectangle : ");
+                    System.out.println("Enter the sides of a rectangle : ");
                     obj.result=obj.rectangle(input.nextInt(),input.nextInt());
                     obj.string ="Rectangle";
                }else if (choice == 4){
-                    System.out.print("Enter the two sides of a Triangle : ");
+                    System.out.println("Enter the two sides of a Triangle : ");
                     obj.string ="Triangle";
                    obj.result= obj.triangle(input.nextInt(),input.nextInt()); 
                } else{
