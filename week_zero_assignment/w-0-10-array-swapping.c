@@ -41,6 +41,11 @@ int main(){
      temp_array[i] = array_1[i];
      array_1[i] = array_2[i];
      array_2[i] = temp_array[i];
+
+
+    //  array_1[i]=array_1[i]+array_2[i];     // later obtained this method 
+    //  array_2[i]=array_1[i]-array_2[i];
+    //  array_1[i]=array_1[i]-array_2[i];
    }
   
      printf("\n\nPrinting the first array  : ");

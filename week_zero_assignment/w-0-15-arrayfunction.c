@@ -1,3 +1,9 @@
+//error coded re editing required after studying pointer concepts.
+
+// pointers are actually not used in this programme 
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +18,7 @@ int main(){
      printf("\n Enter the array size : ");
      scanf("%d",&size);
      int array[50];
-     int *p_array = getArray(array,size);
+     int *p_array = getArray(array,size); // get this pointer for the next function.
      displayArray(array, size);
 
      return 0;
@@ -32,7 +38,7 @@ int* getArray (int array[], int ar_size){
 
 
 
-void displayArray(int array[],int limit){
+void displayArray(int array[],int limit){  // but i did't knew how to change the indexing value of the pointer address  
 
      for (int i=0; i < limit; i++){
           printf("%d\t",array[i]);

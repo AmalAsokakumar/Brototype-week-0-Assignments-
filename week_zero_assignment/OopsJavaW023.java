@@ -18,8 +18,9 @@ public class OopsJavaW023 {
           System.out.println("Entered Array Elements are : ");
           for(int i=0;i<numberOfRows;i++){
                for(int j=0; j<numberOfColumns;j++){
-                   System.out.println(obj.data[i][j]);
+                   System.out.print("\t"+obj.data[i][j]);
                }
+               System.out.println("\n");
           }
      }
      public static void main(String[] args){
@@ -31,29 +32,9 @@ public class OopsJavaW023 {
           OopsJavaW023 obj =new OopsJavaW023();
           OopsJavaW023 obj2 =new OopsJavaW023();
            obj.getArray(numberOfRows, numberOfColumns);
-          obj2.getArray(numberOfRows, numberOfColumns);
+          //obj2.getArray(numberOfRows, numberOfColumns);
           obj.displayArray(obj, numberOfRows, numberOfColumns);
-          obj.displayArray(obj2, numberOfRows, numberOfColumns);
-
-
-
-
-          for(int i=0;i<numberOfRows;i++){
-               for(int j=0; j<numberOfColumns;j++){
-                   System.out.println(obj.data[i][j]);
-               }
-          }
-
-
-          
-     
-
+          //.displayArray(obj2, numberOfRows, numberOfColumns);
      }
-   
-               
-     
-   
-          
 
-
-     }
+}
