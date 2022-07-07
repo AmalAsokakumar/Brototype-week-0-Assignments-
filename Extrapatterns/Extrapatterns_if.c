@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(){
 
@@ -273,37 +274,83 @@ printf("\n");
 
 
 
+// *********
+// **** ****
+// ***   ***
+// **     **
+// *       *
+// **     **
+// ***   ***
+// **** ****
+// *********
 
 
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+for (int i = 1; i < 2*count; i++){
+          for(int j = 1; j <2*count; j++){
+
+               if (i<=count){
+                    if((j<=((count-i) +1)) || (j>= (count +i) -1)){
+                         printf("*");
+                    }else { 
+                         printf(" ");
+                         }
+               }else{ 
+                    if ((j<=(i-count)+1)||(j >= (2*count-(i-count))-1))
+                    {
+                         printf("*");
+                    }
+                    else{ printf(" ");
+                    }
+               }
+          }
+          printf("\n");
+     }
+
+
+
+
+
+
+
+ printf("\n\n");
+
+
+
+//     *    
+//    ***   
+//   *****  
+//  ******* 
+// *********
+//  ******* 
+//   *****  
+//    ***   
+//     * 
 
 //
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-   int n = 2 *count;
-   if (n%2 == 0)
-       n+=1;
+   // int count =5;
+   // int i,j;
 
- int  inc = count;
-
-   for (i=1; i<=n; i++) {   // count =
-   for(j=1; j<=n; j++) {
-
-    // if ( i < (n/2) +1){
-      if ((j<=(count-i)+1)||((j>=count+i)-1)){
-       if ((j<=i)||(j>=2*count-i)){
-       printf("*");
-       }else printf(" ");}
-//   }else{
-
-//      if ((j <=i-n/2)||((count/2 +i) -1)){
-//           printf("*");
-//      }
-//      else printf (" ");
-
-//   }
-  }
-  printf("\n");
-   }
+     for (int i=1; i<2*count; i++){
+          for( int j=1; j<2*count; j++){
+                if (i<=count){
+                    if((j >=(count-i) +1) && (j <= (count +i) -1)){
+                         printf("*");
+                    }else printf(" ");
+                }else{
+                    if ((j >= (i-count)+1) && (j<= ((2*count)-(i-count)-1))){
+                         printf("*");
+                    } else printf(" ");
+                    }
+          }
+          printf("\n");
+     }
     
     
     
@@ -320,7 +367,210 @@ printf("\n");
 
 
 
+ printf("\n\n");
 
      printf("\n");
+
+
+//     1
+//    123
+//   12345
+//  1234567
+// 123456789
+//  1234567  
+//   12345    
+//    123      
+//     1  
+
+
+
+
+
+
+
+          //int count = 5;
+     int k;
+
+     for(int i = 1; i < 2*count; i++){ // total number of times first loop runs < number of columns * 2 -1 
+               k=1;
+          for(int j = 1; j < count+i; j++) {
+               if (i<=count){
+
+                                   if (j>=((count -i) +1)){ // top half of the pyramid
+                                        printf("%d",k);
+                                        k++;
+                                   }else printf( " ");
+               }else {
+                                   if(j>=((i-count) +1)&&(j< (((2*count)-(i-count))))) // in second half we need to find the starting and ending index of pattern
+                                   { 
+                                        printf("%d",k);
+                                        k++;
+                                   } else printf(" ");
+               }
+          }
+          printf("\n");               // common spacing for two part.
+     }
+
+
+
+
+
+
+
+
+ printf("\n\n");
+
+
+
+
+// ABCDEFGFEDCBA
+// ABCDEF FEDCBA
+// ABCDE   EDCBA
+// ABCD     DCBA
+// ABC       CBA
+// AB         BA
+// A           A
+
+
+
+
+   //       int i,j;
+     char a[20]="ABCDEFGFEDCBA";
+     int  n = strlen(a);
+     int m=(n/2);
+    // printf("%d\n",n);
+     printf ("%s\n",a);
+     for (int i=0; i<=n; i++){
+          for(int j=0; j<=n;j++){
+
+               if (( j>= ((m-i))) && (j <= ((m+i)))){
+                    printf(" ");
+               }else printf("%c",a[j]);
+          }
+          printf("\n");
+     }
+
+
+
+
+
+ printf("\n\n");
+
+
+
+//     *****
+//    *   * 
+//   *   *  
+//  *   *   
+// *****  
+
+
+
+ //    int n, i, j;
+     n=5;
+
+     for (i =1;i<=n;i++){
+          for(j =1;j<2*n;j++){
+           
+
+               if ((j == (n-i)+1) || (j == (2*n-i)) || ((i ==1)&& (j>= n))|| ((i ==n)&&(j<=n)))  printf("*");
+          
+               else printf(" ");
+          }
+          printf("\n");
+
+     }
+ printf("\n\n");
+
+
+
+
+
+
+
+
+//     *    
+//    * *   
+//   *   *  
+//  *     * 
+// *       *
+//  *     * 
+//   *   *  
+//    * *   
+//     *    
+
+     for(i=1;i<2*n;i++){
+          for(int j=1;j<2*n;j++){
+               if(i<=n){
+                         if((j==((n-i)+1))||(j==((n+i)-1))) { printf("*");}
+                         else {  printf(" "); }                  
+                         }
+               else{
+                          if ((j==((i-n)+1))||(j==((2*n-(i-n)-1)))) { printf("*");}
+
+                          else { printf(" ");}
+                         }
+
+                    }
+                     printf("\n");
+
+               }
+
+
+ printf("\n\n");
+
+
+
+
+
+     for(i=1;i<2*n;i++){
+          for(int j=1;j<2*n;j++){
+              
+              if ((i==n)||(j==n)) printf("*");
+              else printf(" ");
+               }
+               printf("\n");
+     }
+
+//     *    
+//     *    
+//     *    
+//     *    
+// *********
+//     *    
+//     *    
+//     *    
+//     *   
+
+
+ printf("\n\n");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
 
