@@ -12,7 +12,7 @@ int main(){
 
 
 
-   // int n, i, j;
+   int  i, j;
    int  n=5;
 
      for (i =1;i<=n;i++){
