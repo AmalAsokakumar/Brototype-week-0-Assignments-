@@ -316,18 +316,20 @@ int main(){
 
 
 
+int dec =1;
+ for(int i=1; i<=n;i++) {
+     for(int j=1, k =2*i-1; j<=i*2-1; j++) {
+          if(j<k/2 +1) {
+              printf("%d ",j*2-1);
+          }else
+          {
+           printf("%d ",(j-dec)*2-1);
+           dec --;     
+          }
+          
+          }
+              printf("\n");
 
-//  for(int i=1; i<=n;i++) {
-//      for(int j=1; j<=i; j++) {
-//           if(i%2==0) {
-//                printf("%d ",j*2);
-//           }
-//           else
-//           {
-//                printf("%d ",j*2-1);
-//           }          
-//      }
-//      printf("\n");
-// } 
+          }
 
 }
